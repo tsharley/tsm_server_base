@@ -22,13 +22,13 @@ fi
 PS1='\[\e[0;38;5;220m\][\[\e[0;1;96m\]\u\[\e[0;1;38;5;220m\]@\[\e[0;95m\]\H\[\e[0;38;5;220m\]]\[\e[0;38;5;220m\]:\[\e[0;38;5;220m\]{\[\e[0;1;96m\]\w\[\e[0;38;5;220m\]}\[\e[0;38;5;220m\]- \[\e[0;1;38;5;220m\]\$ \[\e[0m\]'
 # Load custom aliases, functions, exports and completions
 if [ -f ~/.config/.bash_aliases ]; then
-    . ~/.bash_aliases
+    . ~/.config/.bash_aliases
 fi
 if [ -f ~/.config/.bash_functions ]; then
-    . ~/.bash_functions
+    . ~/.config/.bash_functions
 fi
 if [ -f ~/.config/.bash_exports ]; then
-    . ~/.bash_exports
+    . ~/.config/.bash_exports
 fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion

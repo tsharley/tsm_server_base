@@ -1,5 +1,7 @@
 #!/bin/bash
 
+apt install exa
+
 cat << 'EOF' > /etc/nanorc
 ## Sample initialization file for GNU nano.
 ##
