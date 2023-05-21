@@ -294,23 +294,7 @@ bind ^V paste all
 #set multibuffer
 EOF
 
-function cp_to_skel() {
-  cp ./.profile > /etc/skel
-}
-
-function set_username() {
-  echo "$1" > ~/.un
-}
-
-function set_password() {
-  echo "$1" > ~/.pw
-}
-
-function dev_setup() {
-    set_username
-    set_password
-    echo 'Dev setup complete'
-}
+cat ./.profile > /etc/skel/.profile
 
 function setup_defaults() {
   username=$SETUP_1
